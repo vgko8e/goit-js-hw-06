@@ -16,10 +16,10 @@ const ingredients = [
   'Condiments',
 ];
 
-const ingredientsItem = ingredients.map(ingridient => {
+const ingredientsItem = ingredients.map(ingredient => {
   const ingredientItem = document.createElement('li');
   ingredientItem.classList.add('item');
-  ingredientItem.append(ingridient);
+  ingredientItem.textContent = ingredient;
 
   return ingredientItem;
 });

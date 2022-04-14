@@ -28,8 +28,8 @@ const images = [
   },
 ];
 
-const imgRefs = images.map(image => 
-  `<li><img src=${image.url} alt=${image.alt} width=320 height=240></li>`).join("");
+const imgRefs = images.map((image) => 
+  `<li><img src="${image.url}" alt="${image.alt}" width=320 height=240></li>`).join("");
 const galleryRefs = document.querySelector('.gallery');
 galleryRefs.style.cssText = `list-style: none; display: flex; align-items: center; justify-content: space-between;`;
 galleryRefs.insertAdjacentHTML("afterbegin",imgRefs);
