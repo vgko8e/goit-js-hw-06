@@ -6,7 +6,7 @@ const inputform = document.querySelector('#name-input');
 const outputform = document.querySelector('#name-output');
 
 inputform.addEventListener("input", (event) => {
-    if (inputform.value === '') {
+    if (inputform.value.trim() === '') {
         outputform.textContent = "Anonymous";}
         else {outputform.textContent = event.currentTarget.value;}
     ;
